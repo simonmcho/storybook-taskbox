@@ -1,4 +1,5 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, object } from '@storybook/addon-knobs'
 
@@ -41,3 +42,13 @@ export const Archived = () =>
 
 export const LongTitle = () => 
   <Task task={{ ...taskData, title: longTitleString }} {...actionsData} />
+
+storiesOf("Task", module)
+.addDecorator(withKnobs)
+.addParameters({
+  assets: [
+    "path/to/your/asset.png",
+    "path/to/another/asset.png",
+    "path/to/yet/another/asset.png"
+  ]
+});
