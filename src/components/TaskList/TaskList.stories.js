@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TaskList from '.'
+import { TaskList } from '.'
 import { taskData, actionsData } from '../Task/Task.stories' // this is the example, but should change structure
 
 export default {
@@ -27,6 +27,6 @@ export const withPinnedTasksData = [
 ]
 
 export const Default = () => <TaskList tasks={defaultTasksData} {...actionsData} />
-export const withPinnedTasks = () => <TaskList tasks={withPinnedTasksData} {...actionsData} />
+export const WithPinnedTasks = () => <TaskList tasks={withPinnedTasksData} {...actionsData} />
 export const Loading = () => <TaskList loading tasks={[]} {...actionsData} />
 export const Empty = () => <TaskList tasks={[]} {...actionsData} />
