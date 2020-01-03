@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+SB Chromatic cmd: `npx chromatic --app-code=pb5x4g6kmzf`
+
 ## Available Scripts
 
 In the project directory, you can run:
